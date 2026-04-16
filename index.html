@@ -9,6 +9,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: 'Montserrat', sans-serif; background: #0d1a20; color: white; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 400; }
         .slide { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px 80px; position: relative; }
         .slide:nth-child(odd) { background: linear-gradient(135deg, #0d1a20 0%, #152530 100%); }
         .slide:nth-child(even) { background: linear-gradient(135deg, #152530 0%, #0d1a20 100%); }
@@ -17,7 +18,7 @@
         .nav-dot.active { background: #5a9a9b; transform: scale(1.4); }
         .slide-num { position: absolute; top: 40px; left: 80px; font-size: 12px; font-weight: 600; letter-spacing: 3px; color: #5a9a9b; text-transform: uppercase; }
         .slide-header { text-align: center; margin-bottom: 40px; }
-        .slide-header h2 { font-size: 38px; font-weight: 700; line-height: 1.2; margin-bottom: 12px; }
+        .slide-header h2 { font-size: 38px; font-weight: 400; line-height: 1.2; margin-bottom: 12px; }
         .slide-header p { font-size: 16px; color: #8a9aa3; max-width: 700px; margin: 0 auto; line-height: 1.6; }
         
         /* Cover */
@@ -29,7 +30,7 @@
         .cover-label-box { background: rgba(90, 154, 155, 0.15); padding: 8px 20px; border-radius: 4px; }
         .cover-label { font-size: 10px; font-weight: 600; letter-spacing: 3px; color: #5a9a9b; text-transform: uppercase; }
         .cover-content { margin-top: 60px; }
-        .cover-slide h1 { font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 25px; letter-spacing: -2px; }
+        .cover-slide h1 { font-size: 64px; font-weight: 400; line-height: 1.1; margin-bottom: 25px; letter-spacing: -2px; }
         .cover-subtitle { font-size: 18px; color: #8a9aa3; max-width: 550px; margin: 0 auto 50px; line-height: 1.6; }
         .cover-meta { display: flex; justify-content: center; gap: 50px; margin-top: 50px; }
         .meta-item { text-align: center; }
@@ -65,7 +66,7 @@
         .funnel-3 { width: 58%; background: linear-gradient(135deg, #2a3a43 0%, #1a2a33 100%); z-index: 1; clip-path: polygon(6% 0%, 94% 0%, 100% 100%, 0% 100%); }
         .funnel-content { display: flex; align-items: center; gap: 30px; color: white; }
         .funnel-pct { font-size: 56px; font-weight: 800; line-height: 1; }
-        .funnel-title { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px; opacity: 0.9; }
+        .funnel-title { font-size: 14px; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px; opacity: 0.9; }
         .funnel-desc { font-size: 13px; opacity: 0.75; max-width: 280px; line-height: 1.5; }
         .funnel-insight { margin-top: 40px; text-align: center; max-width: 650px; }
         .funnel-insight p { font-size: 16px; color: #c1d7db; line-height: 1.7; }
@@ -73,7 +74,7 @@
         
         /* Comparison */
         .comp-table { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 35px; max-width: 900px; width: 100%; }
-        .comp-col h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid; }
+        .comp-col h4 { font-size: 11px; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid; }
         .comp-col.left h4 { color: #4d6473; border-color: #4d6473; }
         .comp-col.right h4 { color: #5a9a9b; border-color: #5a9a9b; }
         .comp-col ul { list-style: none; padding: 0; margin: 0; }
@@ -90,7 +91,7 @@
         .info-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 25px; transition: all 0.3s ease; }
         .info-card:hover { background: rgba(255,255,255,0.05); border-color: rgba(90, 154, 155, 0.2); }
         .info-card-num { font-size: 12px; font-weight: 700; color: #5a9a9b; margin-bottom: 10px; }
-        .info-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+        .info-card h4 { font-size: 15px; font-weight: 400; margin-bottom: 8px; line-height: 1.4; }
         .info-card p { font-size: 13px; color: #8a9aa3; line-height: 1.6; margin: 0; }
         
         /* Stack */
@@ -105,7 +106,7 @@
         .stack-1 .stack-n, .stack-1 .stack-title, .stack-1 .stack-desc { color: #1a2a33; }
         .stack-n { width: 30px; height: 30px; background: rgba(255,255,255,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; margin-right: 18px; flex-shrink: 0; }
         .stack-1 .stack-n { background: rgba(26, 42, 51, 0.1); }
-        .stack-title { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+        .stack-title { font-size: 14px; font-weight: 400; margin-bottom: 2px; }
         .stack-desc { font-size: 12px; opacity: 0.75; }
         .stack-label { width: 80%; text-align: center; padding: 10px; color: #5a9a9b; font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; }
         .stack-insight { margin-top: 35px; text-align: center; max-width: 650px; }
@@ -115,7 +116,7 @@
         /* Checklist */
         .checklist-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 950px; width: 100%; }
         .check-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 22px; }
-        .check-box h4 { font-size: 13px; font-weight: 600; margin-bottom: 12px; color: #5a9a9b; }
+        .check-box h4 { font-size: 13px; font-weight: 400; margin-bottom: 12px; color: #5a9a9b; }
         .check-box ul { list-style: none; padding: 0; margin: 0; }
         .check-box li { font-size: 12px; color: #c1d7db; padding: 6px 0 6px 20px; position: relative; line-height: 1.5; }
         .check-box li::before { content: ''; position: absolute; left: 0; top: 10px; width: 10px; height: 10px; border: 2px solid rgba(90, 154, 155, 0.4); border-radius: 2px; }
@@ -292,27 +293,25 @@
 
     <!-- Slide 4: Three Critical Observations -->
     <section class="slide" id="slide-3">
-        <span class="slide-num">02</span>
-        <div class="slide-header"><h2>Speed as an AI Advantage:<br>Three Critical Observations</h2><p>AI strategy in 2026 is defined less by model access and more by the organizational systems that determine how quickly insight becomes action.</p></div>
+        <span class="slide-num">STATE OF THE WORLD 2026</span>
+        <div class="slide-header"><h2>Speed as an AI Advantage:<br>Three Critical Observations</h2><p>AI strategy in 2026 is defined less by model access and more by the organizational systems that determine how quickly insight becomes action and how consistently action generates learning.</p></div>
         <div class="quote-box" style="max-width:800px;margin:0 auto;"><p>The execution divide in 2026 is not about access to AI, it is about the distance between pilot and production.</p></div>
-        <p class="source">Source synthesis: McKinsey State of AI 2026, IDC CIO Playbook 2026, PwC 29th Annual Global CEO Survey</p>
     </section>
 
     <!-- Slide 5: The Execution Divide -->
     <section class="slide" id="slide-4">
-        <span class="slide-num">03</span>
-        <div class="slide-header"><h2>The Execution Divide</h2><p>AI strategy in 2026 is defined less by model access and more by the systems that turn insight into action.</p></div>
         <div class="funnel-container">
-            <div class="funnel-stage funnel-1"><div class="funnel-content"><div class="funnel-pct">88%</div><div><div class="funnel-title">Use AI</div><div class="funnel-desc">of organizations use AI in at least one function, access is nearly universal</div></div></div></div>
-            <div class="funnel-stage funnel-2"><div class="funnel-content"><div class="funnel-pct">46%</div><div><div class="funnel-title">Reach Production</div><div class="funnel-desc">of pilots ever reach production, fewer than half make it past the pilot stage</div></div></div></div>
-            <div class="funnel-stage funnel-3"><div class="funnel-content"><div class="funnel-pct">6%</div><div><div class="funnel-title">See Impact</div><div class="funnel-desc">report meaningful enterprise-wide financial impact, most investment is not compounding</div></div></div></div>
+            <div class="funnel-stage funnel-1"><div class="funnel-content"><div class="funnel-pct">88%</div><div><div class="funnel-title">Use AI</div><div class="funnel-desc">Of organizations use AI in at least one function<br>access is nearly universal</div></div></div></div>
+            <div class="funnel-stage funnel-2"><div class="funnel-content"><div class="funnel-pct">46%</div><div><div class="funnel-title">Reach Production</div><div class="funnel-desc">of pilots ever reach production<br>fewer than half make it past the pilot stage</div></div></div></div>
+            <div class="funnel-stage funnel-3"><div class="funnel-content"><div class="funnel-pct">6%</div><div><div class="funnel-title">See Impact</div><div class="funnel-desc">report meaningful enterprise-wide financial impact<br>most investment is not compounding</div></div></div></div>
         </div>
-        <div style="font-size: 16px; color: #c1d7db; margin: 25px 0 10px; max-width: 700px; text-align: center; line-height: 1.6;">The execution divide is not about access to AI, but the gap between pilot and production.</div>
+        
+        <p class="source" style="margin: 25px 0; text-align: center; max-width: 800px; line-height: 1.5;"><strong>Figure 1. The Execution Divide: Pilot vs. Production</strong><br>Source synthesis: McKinsey State of AI 2026, IDC CIO Playbook 2026, PwC 29th Annual Global CEO Survey.</p>
+        
         <div class="comp-table">
-            <div class="comp-col left"><h4>Where Most Organizations Are</h4><ul><li>AI in at least one function</li><li>46% of pilots reach production</li><li>Speed measured by announcements</li><li>Governance blocks experimentation</li><li>Hiring for AI tools</li></ul></div>
-            <div class="comp-col right"><h4>Where Compounders Are</h4><ul><li>AI in production across workflows</li><li>Pilots ship in weeks</li><li>Speed measured by learning cycles</li><li>Governance enables pre-authorized experiments</li><li>Hiring for critical thinking and orchestration</li></ul></div>
+            <div class="comp-col left"><h4>Where Most Organizations Are</h4><ul><li>AI in at least one function</li><li>46% of pilots reach production</li><li>Speed measured by announcements</li><li>Governance blocks experimentation</li><li>Hiring for AI tool familiarity</li></ul></div>
+            <div class="comp-col right"><h4>Where Compounders Are</h4><ul><li>AI in production across core workflows</li><li>Pilots ship in weeks, not quarters</li><li>Speed measured by learning cycle time</li><li>Governance enables pre-authorized experiments</li><li>Hiring for critical thinking and orchestration</li></ul></div>
         </div>
-        <p class="source" style="margin-top: 30px;">Source: McKinsey State of AI 2026, PwC Global CEO Survey</p>
     </section>
 
     <!-- Slide 6: From AI as a Project -->
