@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speed as an AI Advantage — Research Report</title>
+    <title>Speed as an AI Advantage Research Report</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,16 +22,18 @@
         
         /* Cover */
         .cover-slide { text-align: center; position: relative; }
-        .cover-top { position: absolute; top: 40px; left: 0; right: 0; display: flex; justify-content: space-between; align-items: flex-start; padding: 0 60px; }
+        #slide-0 { background: linear-gradient(135deg, rgba(13, 26, 32, 0.7) 0%, rgba(13, 26, 32, 0.95) 100%), url('img/Gemini_Generated_Image_utjqw3utjqw3utjq.jfif') center/cover no-repeat; }
+        .cover-top { position: absolute; top: 40px; left: 0; right: 0; display: flex; justify-content: space-between; align-items: flex-start; padding: 0 60px; z-index: 2; }
+        .cover-content, .cover-sponsors { position: relative; z-index: 2; }
         .cover-gild-logo { height: 22px; opacity: 0.85; }
         .cover-label-box { background: rgba(90, 154, 155, 0.15); padding: 8px 20px; border-radius: 4px; }
         .cover-label { font-size: 10px; font-weight: 600; letter-spacing: 3px; color: #5a9a9b; text-transform: uppercase; }
         .cover-content { margin-top: 60px; }
-        .cover-slide h1 { font-size: 64px; font-weight: 800; line-height: 1.1; margin-bottom: 25px; letter-spacing: -2px; }
+        .cover-slide h1 { font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 25px; letter-spacing: -2px; }
         .cover-subtitle { font-size: 18px; color: #8a9aa3; max-width: 550px; margin: 0 auto 50px; line-height: 1.6; }
         .cover-meta { display: flex; justify-content: center; gap: 50px; margin-top: 50px; }
         .meta-item { text-align: center; }
-        .meta-val { font-size: 48px; font-weight: 800; color: #5a9a9b; line-height: 1; }
+        .meta-val { font-size: 48px; font-weight: 800; color: white; line-height: 1; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
         .meta-lbl { font-size: 10px; color: #8a9aa3; text-transform: uppercase; letter-spacing: 2px; margin-top: 8px; }
         .cover-sponsors { position: absolute; bottom: 50px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: 20px; }
         .sponsors-label { font-size: 10px; color: #4d6473; text-transform: uppercase; letter-spacing: 2px; }
@@ -226,6 +228,7 @@
         <div class="nav-dot" onclick="goTo(10)"></div>
         <div class="nav-dot" onclick="goTo(11)"></div>
         <div class="nav-dot" onclick="goTo(12)"></div>
+        <div class="nav-dot" onclick="goTo(13)"></div>
     </div>
 
     <!-- Slide 1: Cover -->
@@ -233,7 +236,7 @@
         <div class="cover-top">
             <img src="logo-gild.png" alt="GILD" class="cover-gild-logo">
             <div class="cover-label-box">
-                <span class="cover-label">Research Report — April 2026</span>
+                <span class="cover-label">Research Report April 2026</span>
             </div>
         </div>
         <div class="cover-content">
@@ -298,11 +301,11 @@
     <!-- Slide 5: The Execution Divide -->
     <section class="slide" id="slide-4">
         <span class="slide-num">03</span>
-        <div class="slide-header"><h2>The Execution Divide</h2><p>Pilot vs. Production Gap — The gap is not access. It is execution.</p></div>
+        <div class="slide-header"><h2>The Execution Divide</h2><p>Pilot vs. Production Gap: The gap is not access. It is execution.</p></div>
         <div class="funnel-container">
-            <div class="funnel-stage funnel-1"><div class="funnel-content"><div class="funnel-pct">88%</div><div><div class="funnel-title">Use AI</div><div class="funnel-desc">of organizations use AI in at least one function — access is nearly universal</div></div></div></div>
-            <div class="funnel-stage funnel-2"><div class="funnel-content"><div class="funnel-pct">46%</div><div><div class="funnel-title">Reach Production</div><div class="funnel-desc">of pilots ever reach production — fewer than half make it past the pilot stage</div></div></div></div>
-            <div class="funnel-stage funnel-3"><div class="funnel-content"><div class="funnel-pct">6%</div><div><div class="funnel-title">See Impact</div><div class="funnel-desc">report meaningful enterprise-wide financial impact — most investment is not compounding</div></div></div></div>
+            <div class="funnel-stage funnel-1"><div class="funnel-content"><div class="funnel-pct">88%</div><div><div class="funnel-title">Use AI</div><div class="funnel-desc">of organizations use AI in at least one function, access is nearly universal</div></div></div></div>
+            <div class="funnel-stage funnel-2"><div class="funnel-content"><div class="funnel-pct">46%</div><div><div class="funnel-title">Reach Production</div><div class="funnel-desc">of pilots ever reach production, fewer than half make it past the pilot stage</div></div></div></div>
+            <div class="funnel-stage funnel-3"><div class="funnel-content"><div class="funnel-pct">6%</div><div><div class="funnel-title">See Impact</div><div class="funnel-desc">report meaningful enterprise-wide financial impact, most investment is not compounding</div></div></div></div>
         </div>
         <div class="comp-table">
             <div class="comp-col left"><h4>Where Most Organizations Are</h4><ul><li>AI in at least one function</li><li>46% of pilots reach production</li><li>Speed measured by announcements</li><li>Governance blocks experimentation</li><li>Hiring for AI tool familiarity</li></ul></div>
@@ -331,7 +334,7 @@
     <!-- Slide 7: Speed Architecture -->
     <section class="slide" id="slide-6">
         <span class="slide-num">05</span>
-        <div class="slide-header"><h2>The Speed Architecture</h2><p>Four Dimensions of Execution Advantage — Advantage compounds when all four are functioning</p></div>
+        <div class="slide-header"><h2>The Speed Architecture</h2><p>Four Dimensions of Execution Advantage: Advantage compounds when all four are functioning</p></div>
         <div class="cards-grid">
             <div class="info-card"><div class="info-card-num">01</div><h4>Decision Rights</h4><p>Clear ownership for fast approvals. Pre-authorized categories of AI experiments that teams can launch without case-by-case approval.</p></div>
             <div class="info-card"><div class="info-card-num">02</div><h4>Talent & Judgment</h4><p>Hire for critical thinking first. 73% of talent leaders rank problem-solving as the #1 skill needed; AI technical skills rank fifth.</p></div>
@@ -425,6 +428,29 @@
             <p style="color:#5a9a9b;font-weight:600;margin-top:30px;">The window to build this architecture is narrowing.</p>
         </div>
         <div class="footer"><span>GILD_04_14_2026_Research_Report</span><span>© 2026 GILD. All rights reserved.</span></div>
+    </section>
+
+    <!-- Slide 14: Sources -->
+    <section class="slide" id="slide-13">
+        <span class="slide-num">Sources</span>
+        <div class="slide-header"><h2>Sources & Methodology</h2></div>
+        <div class="text-block" style="max-width: 900px; width: 100%;">
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 30px;">This report synthesizes publicly available research, industry surveys, and market analyses published within the past 6–12 months. It does not include quotes, examples, or identifiable information from GILD event participants.</p>
+            
+            <div style="font-size: 13px; color: #8a9aa3; gap: 0; display: flex; flex-direction: column;">
+                <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong style="color: #c1d7db;">McKinsey & Company (2025–2026)</strong> The State of AI: How Organizations Are Rewiring to Capture Value<br><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value" style="color: #01fdfe; text-decoration: none; font-size: 11px; word-break: break-all;" target="_blank">https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value</a></div>
+                <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong style="color: #c1d7db;">PwC (2026)</strong> 29th Annual Global CEO Survey. 4,454 CEOs across 95 countries on AI strategy and organizational readiness<br><a href="https://www.pwc.com/gx/en/issues/c-suite-insights/ceo-survey.html" style="color: #01fdfe; text-decoration: none; font-size: 11px; word-break: break-all;" target="_blank">https://www.pwc.com/gx/en/issues/c-suite-insights/ceo-survey.html</a></div>
+                <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong style="color: #c1d7db;">Korn Ferry (2026)</strong> 2026 Talent Trends Report. AI skills demand and the evolution of human-AI workforce models<br><a href="https://www.kornferry.com/insights/featured-topics/talent-recruitment/ai-in-recruitment-trends" style="color: #01fdfe; text-decoration: none; font-size: 11px; word-break: break-all;" target="_blank">https://www.kornferry.com/insights/featured-topics/talent-recruitment/ai-in-recruitment-trends</a></div>
+                <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong style="color: #c1d7db;">ManpowerGroup (2026)</strong> Global Talent Barometer 2026. Global workforce AI adoption and skills readiness<br><a href="https://www.manpowergroup.com/en/insights" style="color: #01fdfe; text-decoration: none; font-size: 11px; word-break: break-all;" target="_blank">https://www.manpowergroup.com/en/insights</a></div>
+                <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong style="color: #c1d7db;">IDC (2026)</strong> CIO Playbook 2026: Enterprise AI Adoption. Pilot-to-production conversion and strategic priorities<br><a href="https://www.idc.com/resource-center/blog/idc-directions-2026-where-ai-strategy-becomes-enterprise-execution/" style="color: #01fdfe; text-decoration: none; font-size: 11px; word-break: break-all;" target="_blank">https://www.idc.com/resource-center/blog/idc-directions-2026-where-ai-strategy-becomes-enterprise-execution/</a></div>
+                <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong style="color: #c1d7db;">Rise Global (2026)</strong> AI Talent Salary Report 2026. AI professional compensation trends and the cost of hiring delay<br><a href="https://www.riseworks.io/blog/ai-talent-salary-report-2025" style="color: #01fdfe; text-decoration: none; font-size: 11px; word-break: break-all;" target="_blank">https://www.riseworks.io/blog/ai-talent-salary-report-2025</a></div>
+                <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><strong style="color: #c1d7db;">Stanford HAI (2025)</strong> AI Index Report 2025. Benchmarking of AI model capability convergence and cost trajectories<br><a href="https://hai.stanford.edu/ai-index/2025-ai-index-report" style="color: #01fdfe; text-decoration: none; font-size: 11px; word-break: break-all;" target="_blank">https://hai.stanford.edu/ai-index/2025-ai-index-report</a></div>
+            </div>
+        </div>
+        <div class="footer" style="position: static; text-align: center; display: block; max-width: 900px; margin: 40px auto 0; font-family: 'JetBrains Mono', monospace;">
+            <p style="margin-bottom: 8px; color: #4d6473;">Gild_04_14_2026_Research_Report &copy; 2026 GILD. All rights reserved.</p>
+            <p style="opacity: 0.7; line-height: 1.5; font-size: 9px; text-transform: none; color: #4d6473;">For questions about this report or GILD membership: info@gild.com | www.gildhq.com. This report is provided for informational purposes only. All insights are synthesized from publicly available research and should be adapted to your organization's specific context.</p>
+        </div>
     </section>
 
     <script>
