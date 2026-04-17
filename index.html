@@ -212,6 +212,27 @@
             .nav-dots { right: 10px; gap: 6px; }
             .nav-dot { width: 6px; height: 6px; }
         }
+        /* Scroll Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+        .anim { opacity: 0; }
+        .anim.visible { animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+        .anim-fade.visible { animation: fadeIn 0.7s ease forwards; }
+        .anim-delay-1 { animation-delay: 0.08s !important; }
+        .anim-delay-2 { animation-delay: 0.16s !important; }
+        .anim-delay-3 { animation-delay: 0.24s !important; }
+        .anim-delay-4 { animation-delay: 0.32s !important; }
+        .anim-delay-5 { animation-delay: 0.40s !important; }
+        .anim-delay-6 { animation-delay: 0.48s !important; }
+        @media (prefers-reduced-motion: reduce) {
+            .anim, .anim-fade { opacity: 1 !important; animation: none !important; }
+        }
     </style>
 </head>
 <body>
@@ -465,10 +486,59 @@
     </section>
 
     <script>
+        // Nav dots
         function goTo(n){document.getElementById('slide-'+n).scrollIntoView({behavior:'smooth'});}
         const slides=document.querySelectorAll('.slide'),dots=document.querySelectorAll('.nav-dot');
         const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){const i=Array.from(slides).indexOf(en.target);dots.forEach((d,j)=>d.classList.toggle('active',j===i));}});},{threshold:0.5});
         slides.forEach(s=>obs.observe(s));
+
+        // Scroll animations
+        (function(){
+            // Add anim class to target elements
+            document.querySelectorAll('.slide-header, .text-block, .quote-box, .source, .funnel-insight, .stack-insight, .stack-label, .comp-table').forEach(el=>{
+                el.classList.add('anim');
+            });
+            // Stagger: info-cards
+            document.querySelectorAll('.info-card').forEach((el,i)=>{
+                el.classList.add('anim','anim-delay-'+(Math.min(i%6+1,6)));
+            });
+            // Stagger: funnel stages
+            document.querySelectorAll('.funnel-stage').forEach((el,i)=>{
+                el.classList.add('anim','anim-delay-'+(i+1));
+            });
+            // Stagger: stack layers
+            document.querySelectorAll('.stack-layer').forEach((el,i)=>{
+                el.classList.add('anim','anim-delay-'+(Math.min(i+1,6)));
+            });
+            // Stagger: table rows
+            document.querySelectorAll('.data-table tbody tr').forEach((el,i)=>{
+                el.classList.add('anim','anim-delay-'+(Math.min(i+1,6)));
+            });
+            // Stagger: checklist boxes
+            document.querySelectorAll('.check-box').forEach((el,i)=>{
+                el.classList.add('anim','anim-delay-'+(i+1));
+            });
+            // Stagger: comp cols
+            document.querySelectorAll('.comp-col').forEach((el,i)=>{
+                el.classList.add('anim','anim-delay-'+(i+1));
+            });
+            // Stagger: TOC items
+            document.querySelectorAll('.toc-item').forEach((el,i)=>{
+                el.classList.add('anim','anim-delay-'+(Math.min(i%5+1,5)));
+            });
+
+            // Trigger on scroll
+            const animObs = new IntersectionObserver(entries=>{
+                entries.forEach(entry=>{
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('visible');
+                        animObs.unobserve(entry.target); // fire once
+                    }
+                });
+            },{threshold:0.12});
+
+            document.querySelectorAll('.anim').forEach(el=>animObs.observe(el));
+        })();
     </script>
 </body>
 </html>
