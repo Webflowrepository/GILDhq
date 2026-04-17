@@ -45,9 +45,12 @@
         
         /* TOC */
         .toc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px 50px; max-width: 900px; width: 100%; }
-        .toc-item { display: flex; align-items: baseline; gap: 15px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .toc-n { font-size: 12px; font-weight: 700; color: #5a9a9b; min-width: 25px; }
-        .toc-t { font-size: 14px; color: #c1d7db; }
+        .toc-item { display: flex; align-items: baseline; gap: 15px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer; transition: all 0.2s ease; position: relative; }
+        .toc-item:hover { padding-left: 8px; border-bottom-color: rgba(90, 154, 155, 0.4); }
+        .toc-item:hover .toc-t { color: white; }
+        .toc-item:hover .toc-n { color: #01fdfe; }
+        .toc-n { font-size: 12px; font-weight: 700; color: #5a9a9b; min-width: 25px; transition: color 0.2s; }
+        .toc-t { font-size: 14px; color: #c1d7db; transition: color 0.2s; }
         
         /* Text */
         .text-block { max-width: 800px; margin: 0 auto; }
@@ -256,8 +259,8 @@
         </div>
         <div class="cover-sponsors">
             <span class="sponsors-label">Presented in partnership with</span>
-            <div class="sponsors-logos">
-                <img src="../tecla.png" alt="Tecla" class="sponsor-logo">
+            <div class="sponsors-logos" style="flex-direction: column; gap: 16px; align-items: center;">
+                <img src="../tecla.png" alt="Tecla" class="sponsor-logo" style="height: 38px;">
                 <img src="../driver.png" alt="DRIVER" class="sponsor-logo">
             </div>
         </div>
@@ -268,16 +271,16 @@
         <span class="slide-num">Contents</span>
         <div class="slide-header"><h2>Table of Contents</h2></div>
         <div class="toc-grid">
-            <div class="toc-item"><span class="toc-n">01</span><span class="toc-t">A Research-Backed, Operator-Grade Asset</span></div>
-            <div class="toc-item"><span class="toc-n">02</span><span class="toc-t">Speed as an AI Advantage: Three Critical Observations</span></div>
-            <div class="toc-item"><span class="toc-n">03</span><span class="toc-t">The Execution Divide</span></div>
-            <div class="toc-item"><span class="toc-n">04</span><span class="toc-t">From AI as a Project to AI as a Continuous System</span></div>
-            <div class="toc-item"><span class="toc-n">05</span><span class="toc-t">The Speed Architecture: Four Dimensions of Execution Advantage</span></div>
-            <div class="toc-item"><span class="toc-n">06</span><span class="toc-t">What Is Working in 2026: Implementation Paths</span></div>
-            <div class="toc-item"><span class="toc-n">07</span><span class="toc-t">Most AI Speed Failures Are Organizational, Not Technical</span></div>
-            <div class="toc-item"><span class="toc-n">08</span><span class="toc-t">How Speed Compounds Across the Organization</span></div>
-            <div class="toc-item"><span class="toc-n">09</span><span class="toc-t">Leadership Checklist: Assess Your Execution Posture</span></div>
-            <div class="toc-item"><span class="toc-n">10</span><span class="toc-t">Six Experiments to Build Execution Velocity</span></div>
+            <div class="toc-item" onclick="goTo(2)"><span class="toc-n">01</span><span class="toc-t">A Research-Backed, Operator-Grade Asset</span></div>
+            <div class="toc-item" onclick="goTo(3)"><span class="toc-n">02</span><span class="toc-t">Speed as an AI Advantage: Three Critical Observations</span></div>
+            <div class="toc-item" onclick="goTo(4)"><span class="toc-n">03</span><span class="toc-t">The Execution Divide</span></div>
+            <div class="toc-item" onclick="goTo(5)"><span class="toc-n">04</span><span class="toc-t">From AI as a Project to AI as a Continuous System</span></div>
+            <div class="toc-item" onclick="goTo(6)"><span class="toc-n">05</span><span class="toc-t">The Speed Architecture: Four Dimensions of Execution Advantage</span></div>
+            <div class="toc-item" onclick="goTo(7)"><span class="toc-n">06</span><span class="toc-t">What Is Working in 2026: Implementation Paths</span></div>
+            <div class="toc-item" onclick="goTo(8)"><span class="toc-n">07</span><span class="toc-t">Most AI Speed Failures Are Organizational, Not Technical</span></div>
+            <div class="toc-item" onclick="goTo(9)"><span class="toc-n">08</span><span class="toc-t">How Speed Compounds Across the Organization</span></div>
+            <div class="toc-item" onclick="goTo(10)"><span class="toc-n">09</span><span class="toc-t">Leadership Checklist: Assess Your Execution Posture</span></div>
+            <div class="toc-item" onclick="goTo(11)"><span class="toc-n">10</span><span class="toc-t">Six Experiments to Build Execution Velocity</span></div>
         </div>
     </section>
 
@@ -298,13 +301,14 @@
 
     <!-- Slide 4: Three Critical Observations -->
     <section class="slide" id="slide-3">
-        <span class="slide-num">STATE OF THE WORLD 2026</span>
-        <div class="slide-header"><h2>Speed as an AI Advantage:<br>Three Critical Observations</h2><p>AI strategy in 2026 is defined less by model access and more by the organizational systems that determine how quickly insight becomes action and how consistently action generates learning.</p></div>
+        <span class="slide-num">02</span>
+        <div class="slide-header"><h2>Speed as an AI Advantage:<br>Three Critical Observations</h2><p style="text-align: left; margin-top: 40px;">AI strategy in 2026 is defined less by model access and more by the organizational systems that determine how quickly insight becomes action and how consistently action generates learning.</p></div>
         <div class="quote-box" style="max-width:800px;margin:0 auto;"><p>The execution divide in 2026 is not about access to AI, it is about the distance between pilot and production.</p></div>
     </section>
 
     <!-- Slide 5: The Execution Divide -->
     <section class="slide" id="slide-4">
+        <span class="slide-num">03</span>
         <div class="funnel-container">
             <div class="funnel-stage funnel-1"><div class="funnel-content"><div class="funnel-pct">88%</div><div><div class="funnel-title">Use AI</div><div class="funnel-desc">Of organizations use AI in at least one function<br>access is nearly universal</div></div></div></div>
             <div class="funnel-stage funnel-2"><div class="funnel-content"><div class="funnel-pct">46%</div><div><div class="funnel-title">Reach Production</div><div class="funnel-desc">of pilots ever reach production<br>fewer than half make it past the pilot stage</div></div></div></div>
