@@ -22,21 +22,21 @@
         .slide-header p { font-size: 16px; color: #8a9aa3; max-width: 700px; margin: 0 auto; line-height: 1.6; }
         
         /* Cover */
-        .cover-slide { text-align: center; position: relative; }
+        .cover-slide { text-align: center; position: relative; justify-content: center; gap: 0; padding-bottom: 80px; }
         #slide-0 { background: linear-gradient(135deg, rgba(13, 26, 32, 0.7) 0%, rgba(13, 26, 32, 0.95) 100%), url('../img/Gemini_Generated_Image_utjqw3utjqw3utjq.jfif') center/cover no-repeat; }
         .cover-top { position: fixed; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 25px 60px; z-index: 1000; background: rgba(13, 26, 32, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
         .cover-content, .cover-sponsors { position: relative; z-index: 2; }
         .cover-gild-logo { height: 22px; opacity: 0.85; }
         .cover-label-box { background: rgba(90, 154, 155, 0.15); padding: 8px 20px; border-radius: 4px; }
         .cover-label { font-size: 10px; font-weight: 600; letter-spacing: 3px; color: #5a9a9b; text-transform: uppercase; }
-        .cover-content { margin-top: 60px; }
+        .cover-content { margin-top: 0; }
         .cover-slide h1 { font-size: 64px; font-weight: 400; line-height: 1.1; margin-bottom: 25px; letter-spacing: -2px; }
-        .cover-subtitle { font-size: 18px; color: #8a9aa3; max-width: 550px; margin: 0 auto 50px; line-height: 1.6; }
-        .cover-meta { display: flex; justify-content: center; gap: 50px; margin-top: 50px; }
+        .cover-subtitle { font-size: 18px; color: #8a9aa3; max-width: 550px; margin: 0 auto 40px; line-height: 1.6; }
+        .cover-meta { display: flex; justify-content: center; gap: 50px; margin-top: 40px; margin-bottom: 0; }
         .meta-item { text-align: center; }
         .meta-val { font-size: 48px; font-weight: 800; color: white; line-height: 1; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
         .meta-lbl { font-size: 10px; color: #8a9aa3; text-transform: uppercase; letter-spacing: 2px; margin-top: 8px; }
-        .cover-sponsors { position: absolute; bottom: 50px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+        .cover-sponsors { position: relative; bottom: auto; left: auto; right: auto; display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 55px; }
         .sponsors-label { font-size: 10px; color: #4d6473; text-transform: uppercase; letter-spacing: 2px; }
         .sponsors-logos { display: flex; align-items: center; gap: 40px; }
         .sponsor-logo { height: 28px; opacity: 0.9; transition: opacity 0.3s; }
@@ -192,17 +192,17 @@
             .footer { left: 20px; right: 20px; bottom: 20px; flex-direction: column; gap: 5px; text-align: center; }
             
             /* Cover logos mobile */
-            .cover-slide { padding: 100px 20px 40px; min-height: auto; }
+            .cover-slide { padding: 100px 20px 50px; min-height: auto; gap: 0; }
             .cover-top { padding: 15px 20px; top: 0; flex-direction: column; align-items: center; gap: 10px; position: fixed; }
             .cover-gild-logo { height: 18px; }
             .cover-label-box { padding: 6px 14px; }
-            .cover-content { margin-top: 0; padding-bottom: 30px; }
+            .cover-content { margin-top: 0; padding-bottom: 0; }
             .cover-slide h1 { font-size: 28px; margin-bottom: 15px; }
-            .cover-subtitle { font-size: 13px; margin-bottom: 30px; }
-            .cover-meta { flex-direction: row; gap: 20px; margin-top: 0; margin-bottom: 40px; }
+            .cover-subtitle { font-size: 13px; margin-bottom: 20px; }
+            .cover-meta { flex-direction: row; gap: 20px; margin-top: 20px; margin-bottom: 0; }
             .meta-val { font-size: 28px; }
             .meta-lbl { font-size: 9px; }
-            .cover-sponsors { position: relative; bottom: auto; gap: 10px; }
+            .cover-sponsors { position: relative; bottom: auto; gap: 10px; margin-top: 30px; }
             .sponsors-logos { gap: 25px; }
             .sponsor-logo { height: 20px; }
             .desktop-only { display: none !important; }
