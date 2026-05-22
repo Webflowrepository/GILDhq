@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\GILDhq\\\\index.html.html\" -Pattern \"conversation.starter\" -CaseSensitive:$false)"
+    ]
+  }
+}
