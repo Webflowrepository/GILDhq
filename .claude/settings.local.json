@@ -6,7 +6,10 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(findstr -i \"pj\\\\|patrick\\\\|jean\\\\|new\")",
       "Bash(Get-ChildItem \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\\\\images\")",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "Bash(git -C \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\" status)",
+      "Bash(git -C \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\" log --oneline -5)",
+      "Bash(git -C \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\" diff HEAD -- index.html)"
     ]
   }
 }
