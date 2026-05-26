@@ -3,7 +3,10 @@
     "allow": [
       "PowerShell(Select-String -Path \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\GILDhq\\\\index.html.html\" -Pattern \"conversation.starter\" -CaseSensitive:$false)",
       "Bash(ls \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\")",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(findstr -i \"pj\\\\|patrick\\\\|jean\\\\|new\")",
+      "Bash(Get-ChildItem \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\\\\images\")",
+      "Bash(Select-Object Name)"
     ]
   }
 }
