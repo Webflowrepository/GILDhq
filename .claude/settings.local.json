@@ -11,7 +11,8 @@
       "Bash(git -C \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\" log --oneline -5)",
       "Bash(git -C \"C:\\\\Users\\\\Equipo\\\\Documents\\\\GitHub\\\\Event Deck- GILD\" diff HEAD -- index.html)",
       "PowerShell($content = Get-Content 'D:\\\\Downloads\\\\GILD-Austin-May26-NameTags-v1 \\(1\\).html' -Encoding UTF8; $line = $content[134]; Write-Output $line.Substring\\(0, 200\\))",
-      "PowerShell($content = Get-Content 'D:\\\\Downloads\\\\GILD-Austin-May26-NameTags-v1 \\(1\\).html' -Encoding UTF8; for \\($i = 467; $i -le 490; $i++\\) { $line = $content[$i]; if \\($line -and $line.Length -gt 100\\) { Write-Output \\(\"L$\\($i+1\\): \" + $line.Substring\\(0,100\\) + \"...\"\\) } elseif \\($line\\) { Write-Output \\(\"L$\\($i+1\\): \" + $line\\) } })"
+      "PowerShell($content = Get-Content 'D:\\\\Downloads\\\\GILD-Austin-May26-NameTags-v1 \\(1\\).html' -Encoding UTF8; for \\($i = 467; $i -le 490; $i++\\) { $line = $content[$i]; if \\($line -and $line.Length -gt 100\\) { Write-Output \\(\"L$\\($i+1\\): \" + $line.Substring\\(0,100\\) + \"...\"\\) } elseif \\($line\\) { Write-Output \\(\"L$\\($i+1\\): \" + $line\\) } })",
+      "Bash(python -c ' *)"
     ]
   }
 }
