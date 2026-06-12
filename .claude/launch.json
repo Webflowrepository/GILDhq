@@ -6,6 +6,31 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", "-l", "3030", "C:\\Users\\Equipo\\Documents\\GitHub\\Event Deck- GILD"],
       "port": 3030
+    },
+    {
+      "name": "gild-new-website",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:\\Users\\Equipo\\Documents\\GILD New Website"],
+      "port": 3000,
+      "autoPort": true
     }
+  ,{
+    "name": "05-12-2026",
+    "runtimeExecutable": "pnpm",
+    "runtimeArgs": ["--dir", "C:\\Users\\Equipo\\Documents\\GitHub\\05-12-2026", "dev"],
+    "port": 4321
+  }
+  ,{
+    "name": "gildhq",
+    "runtimeExecutable": "pnpm",
+    "runtimeArgs": ["--dir", "C:\\Users\\Equipo\\Documents\\GitHub\\GILDhq", "dev", "--port", "4322"],
+    "port": 4322
+  }
+  ,{
+    "name": "gildhq-static",
+    "runtimeExecutable": "npx",
+    "runtimeArgs": ["serve", "-l", "4323", "C:\\Users\\Equipo\\Documents\\GitHub\\GILDhq"],
+    "port": 4323
+  }
   ]
 }
